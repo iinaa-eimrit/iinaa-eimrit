@@ -1,15 +1,13 @@
 # Hi there, I'm Amrit Raj 👋
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Building%20Awesome%20Software&fontSize=50&animation=fadeIn&fontAlignY=38&desc=Software%20Developer%20%7C%20Open%20Source%20Contributor%20%7C%20IIIT%20Ranchi%20'25&descAlignY=55&descAlign=62"/>
-</div>
+<h2 align="center">Full-Stack TypeScript Engineer | Real-Time Systems & Agentic Workflows</h2>
 
 ## 👨‍💻 About Me
 
 **Full-Stack Developer specializing in React, TypeScript, and real-time WebSockets. Active contributor to open-source agentic frameworks (Rivet, Hive).**
 
-- 🔭 I’m currently working on **Complex Full-Stack Web Applications and real-time backend systems**.
-- 🌱 I’m currently exploring **Advanced Distributed Systems, Rust, and Agentic AI Frameworks**.
+- 🔭 I’m currently building **[Multi-Workspace Document Assistant](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-)** to orchestrate Enterprise RAG workflows.
+- 🌱 Deep-diving into **Rust-based actor models** and optimizing AI agent orchestration.
 - 👯 I’m looking to collaborate on **Deep architectural features in Open Source Projects**.
 - 💬 Ask me about **TypeScript, React, WebSockets, or System Architecture**.
 - 📫 How to reach me: **[amritraj4work@gmail.com](mailto:amritraj4work@gmail.com)** or connect with me on **[LinkedIn](https://linkedin.com/in/amrit-raj)**.
@@ -49,8 +47,13 @@ A high-performance 2D game engine built from scratch. It demonstrates a deep und
 A robust real-time trading platform for stocks and assets. Features comprehensive portfolio management tools, live data streaming, and scalable backend architecture.
 *Tech Stack: TypeScript, WebSockets*
 
-### 📌 [Open Source Contributions](https://github.com/iinaa-eimrit)
-Actively contributing to open-source software, including projects like `rivet-dev/actors`. My contributions range from bug fixes to improving documentation formatting and advocating for modern TUI tools like the Textual framework.
+### 📌 [Multi-Workspace Document Assistant (RAG)](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-) | [🚀 Live Demo](#)
+An AI-powered document assistant integrating RAG (Retrieval-Augmented Generation) and tool-calling to fetch and analyze cross-workspace knowledge.
+*Tech Stack: JavaScript, LLMs, Vector Databases*
 
----
+### 📌 Open Source Impact
+I focus on deep architectural features and performance optimizations in agentic frameworks.
+- **[rivet-dev/actors](https://github.com/rivet-dev/actors)**: Added external OIDC/JWT validation inside onAuth lifecycle hooks.
+- **[rivet-dev/runner](https://github.com/rivet-dev/runner)**: Identified and debugged an O(N) array lookup CPU bottleneck.
+
 ---
