@@ -12,7 +12,7 @@ I am a passionate Software Developer and a 2025 graduate from **IIIT Ranchi**, d
 - 🌱 I’m currently exploring **Advanced Backend Systems, System Design, and Modern UI Frameworks**.
 - 👯 I’m looking to collaborate on **Open Source Projects and Innovative Developer Tools**.
 - 💬 Ask me about **JavaScript, React, Node.js, Python, or Open Source Contributions**.
-- 📫 How to reach me: **[a16raj@gmail.com](mailto:a16raj@gmail.com)** or connect with me on **[LinkedIn](https://linkedin.com/in/amrit-raj)**.
+- 📫 How to reach me: **[amritraj4work@gmail.com](mailto:amritraj4work@gmail.com)** or connect with me on **[LinkedIn](https://linkedin.com/in/amrit-raj)**.
 
 ## 🚀 Tech Stack
 
