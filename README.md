@@ -25,14 +25,14 @@ I am a passionate Software Developer and a 2025 graduate from **IIIT Ranchi**, d
 ## 📈 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=iinaa-eimrit&show_icons=true&theme=radium&hide_border=true&include_all_commits=true&count_private=true" alt="Amrit's GitHub Stats" />
+  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=iinaa-eimrit&show_icons=true&theme=radium&hide_border=true&include_all_commits=true&count_private=true" alt="Amrit's GitHub Stats" />
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=iinaa-eimrit&theme=radium&hide_border=true" alt="Amrit's GitHub Streak" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=iinaa-eimrit&layout=compact&theme=radium&hide_border=true" alt="Top Languages" />
+  <img src="https://github-readme-stats.anuraghazra1.vercel.app/api/top-langs/?username=iinaa-eimrit&layout=compact&theme=radium&hide_border=true" alt="Top Languages" />
 </div>
 
 ## 🏆 Featured Projects
