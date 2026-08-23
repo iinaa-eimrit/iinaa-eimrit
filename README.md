@@ -12,7 +12,7 @@ I build high-performance web applications and contribute to the infrastructure t
 
 ### 🏆 Featured Engineering Work
 
-**1. [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)** | [Live Demo] *(Add actual demo link here)*
+**1. [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)**
 A low-latency trading engine handling concurrent orders and live tick data.
 * **Architecture:** Built with TypeScript and Node.js. Designed a multiplexed WebSocket streaming architecture to push real-time market data to the React client without overwhelming the main thread.
 * **Why it matters:** Demonstrates strict concurrency management, preventing race conditions in financial state management.
@@ -22,7 +22,7 @@ An enterprise-grade retrieval-augmented generation (RAG) pipeline with autonomou
 * **Architecture:** Implemented complex data chunking, vector similarity search, and a robust prompt-chaining loop to prevent LLM hallucinations.
 * **Why it matters:** Proves ability to move beyond basic API wrappers into robust AI system orchestration.
 
-**3. [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D)** | [Live Demo] *(Add actual demo link here)*
+**3. [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D)**
 An interactive WebGL simulation mapping realistic orbital movements.
 * **Architecture:** Built using React Three.js. Implemented strict memory management within the browser's animation loop (`requestAnimationFrame`) to prevent memory leaks during complex camera matrix transformations.
 
