@@ -6,12 +6,12 @@
 
 ## 👨‍💻 About Me
 
-I am a passionate Software Developer and a 2025 graduate from **IIIT Ranchi**, driven by the desire to build scalable, impactful software and intuitive user experiences. I thrive on solving complex problems, writing clean code, and contributing to the open-source community.
+**Full-Stack Developer specializing in React, TypeScript, and real-time WebSockets. Active contributor to open-source agentic frameworks (Rivet, Hive).**
 
-- 🔭 I’m currently working on **Full-stack Web Applications and Terminal User Interfaces (TUIs)**.
-- 🌱 I’m currently exploring **Advanced Backend Systems, System Design, and Modern UI Frameworks**.
-- 👯 I’m looking to collaborate on **Open Source Projects and Innovative Developer Tools**.
-- 💬 Ask me about **JavaScript, React, Node.js, Python, or Open Source Contributions**.
+- 🔭 I’m currently working on **Complex Full-Stack Web Applications and real-time backend systems**.
+- 🌱 I’m currently exploring **Advanced Distributed Systems, Rust, and Agentic AI Frameworks**.
+- 👯 I’m looking to collaborate on **Deep architectural features in Open Source Projects**.
+- 💬 Ask me about **TypeScript, React, WebSockets, or System Architecture**.
 - 📫 How to reach me: **[amritraj4work@gmail.com](mailto:amritraj4work@gmail.com)** or connect with me on **[LinkedIn](https://linkedin.com/in/amrit-raj)**.
 
 ## 🚀 Tech Stack
@@ -37,7 +37,7 @@ I am a passionate Software Developer and a 2025 graduate from **IIIT Ranchi**, d
 
 ## 🏆 Featured Projects
 
-### 📌 [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D)
+### 📌 [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D) | [🚀 Live Demo](#)
 An interactive web-based simulation that allows users to explore a 3D solar system. It features realistic orbital movements, clickable planets, and an immersive space journey, demonstrating advanced 3D rendering and UI interactivity.
 *Tech Stack: TypeScript, React, Three.js*
 
@@ -45,7 +45,7 @@ An interactive web-based simulation that allows users to explore a 3D solar syst
 A high-performance 2D game engine built from scratch. It demonstrates a deep understanding of system-level programming, memory optimization, and physics mechanics.
 *Tech Stack: C++*
 
-### 📌 [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)
+### 📌 [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform) | [🚀 Live Demo](#)
 A robust real-time trading platform for stocks and assets. Features comprehensive portfolio management tools, live data streaming, and scalable backend architecture.
 *Tech Stack: TypeScript, WebSockets*
 
@@ -53,7 +53,4 @@ A robust real-time trading platform for stocks and assets. Features comprehensiv
 Actively contributing to open-source software, including projects like `rivet-dev/actors`. My contributions range from bug fixes to improving documentation formatting and advocating for modern TUI tools like the Textual framework.
 
 ---
-
-<p align="center">
-  <i>"Code is like humor. When you have to explain it, it’s bad." – Cory House</i>
-</p>
+---
