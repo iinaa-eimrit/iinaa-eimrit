@@ -37,9 +37,17 @@ I am a passionate Software Developer and a 2025 graduate from **IIIT Ranchi**, d
 
 ## 🏆 Featured Projects
 
-### 📌 [An Interactive Kanban Board Application](https://github.com/iinaa-eimrit/An-Interactive-Kanban-Board-Application)
-A dynamic and responsive Kanban board designed for task management, featuring smooth drag-and-drop functionality, categorized lists, and state persistence. 
-*Tech Stack: JavaScript, React, Tailwind CSS*
+### 📌 [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D)
+An interactive web-based simulation that allows users to explore a 3D solar system. It features realistic orbital movements, clickable planets, and an immersive space journey, demonstrating advanced 3D rendering and UI interactivity.
+*Tech Stack: TypeScript, React, Three.js*
+
+### 📌 [Space Shooter Game Engine](https://github.com/iinaa-eimrit/Space-Shooter-Game-Engine)
+A high-performance 2D game engine built from scratch. It demonstrates a deep understanding of system-level programming, memory optimization, and physics mechanics.
+*Tech Stack: C++*
+
+### 📌 [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)
+A robust real-time trading platform for stocks and assets. Features comprehensive portfolio management tools, live data streaming, and scalable backend architecture.
+*Tech Stack: TypeScript, WebSockets*
 
 ### 📌 [Open Source Contributions](https://github.com/iinaa-eimrit)
 Actively contributing to open-source software, including projects like `rivet-dev/actors`. My contributions range from bug fixes to improving documentation formatting and advocating for modern TUI tools like the Textual framework.
