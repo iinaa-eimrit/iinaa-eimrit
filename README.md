@@ -34,6 +34,7 @@ A voice-to-voice AI co-pilot for medical consultations.
 
 ### ⚙️ Open Source Impact
 
-I actively contribute to distributed orchestration and agentic AI frameworks. I focus on architectural improvements and performance bottlenecks rather than surface-level fixes.
-* **`rivet-dev/actors`:** Engineered external OIDC/JWT validation inside `onAuth` lifecycle hooks. [View Pull Request](https://github.com/rivet-dev/actors/pull/5572)
+I actively contribute to distributed orchestration and agentic AI frameworks. I focus on architectural improvements, LLM reliability, and performance bottlenecks.
+* **`aden-hive/hive`:** Engineered an LLM self-correction loop within the orchestrator, automatically feeding validation errors back to the model to improve tool-calling reliability. [View Pull Request](https://github.com/aden-hive/hive/pull/7382)
+* **`rivet-dev/actors`:** Engineered external OIDC/JWT validation inside `onAuth` lifecycle hooks to support enterprise authentication. [View Pull Request](https://github.com/rivet-dev/actors/pull/5572)
 * **`rivet-dev/actors`:** Identified and benchmarked a severe O(N) array lookup CPU bottleneck occurring under high load in the runner tunnel. [View Architecture Issue](https://github.com/rivet-dev/actors/issues/5581)
