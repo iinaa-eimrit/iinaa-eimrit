@@ -22,11 +22,19 @@ An enterprise-grade retrieval-augmented generation (RAG) pipeline with autonomou
 * **Architecture:** Implemented complex data chunking, vector similarity search, and a robust prompt-chaining loop to prevent LLM hallucinations.
 * **Why it matters:** Proves ability to move beyond basic API wrappers into robust AI system orchestration.
 
-**3. [Universe Explorer 3D](https://github.com/iinaa-eimrit/Universe-Explorer-3D)**
-An interactive WebGL simulation mapping realistic orbital movements.
-* **Architecture:** Built using React Three.js. Implemented strict memory management within the browser's animation loop (`requestAnimationFrame`) to prevent memory leaks during complex camera matrix transformations.
+**3. [Pen Pulse](https://github.com/iinaa-eimrit/Pen-Pulse)**
+A highly scalable, serverless blogging API.
+* **Architecture:** Deployed to the edge using Cloudflare Workers with a strict monorepo setup for shared Zod validation schemas. Leveraged Prisma Accelerate for distributed database connection pooling.
 
-**4. [AI Medical Consultation Voice LLM](https://github.com/iinaa-eimrit/AI-Medical-Consultation-Co-pilot-Voice-LLM-)**
+**4. [Space Shooter Game Engine](https://github.com/iinaa-eimrit/Space-Shooter-Game-Engine)**
+A custom high-performance 2D game engine built from scratch.
+* **Architecture:** Designed to demonstrate system-level programming, strict memory management, and rendering loop optimization.
+
+**5. [Graph Database Cloud Benchmarking](https://github.com/iinaa-eimrit/Graph-Database-Cloud-Benchmarking)**
+A comprehensive data engineering benchmark suite.
+* **Architecture:** Rigorously compares CognoDB against other managed graph database cloud platforms using standardized, heavy-load datasets and complex workloads.
+
+**6. [AI Medical Consultation Voice LLM](https://github.com/iinaa-eimrit/AI-Medical-Consultation-Co-pilot-Voice-LLM-)**
 A voice-to-voice AI co-pilot for medical consultations.
 * **Architecture:** Engineered a real-time asynchronous pipeline handling audio streaming, live transcription, and text-to-speech with stringent low-latency constraints.
 
