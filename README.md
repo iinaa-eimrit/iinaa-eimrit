@@ -4,13 +4,13 @@
 
 I engineer scalable backend systems and data-intensive full-stack platforms. I specialize in TypeScript, low-latency data streaming (WebSockets), database optimization (PostgreSQL/pgvector), and deploying serverless architectures to the edge.
 
-- 🔭 Currently architecting real-time streaming platforms and serverless APIs (Cloudflare Workers, Prisma Accelerate, Monorepos).
-- 🌱 Profiling open-source frameworks to resolve CPU bottlenecks and integrating enterprise-grade authentication (OIDC/JWT) at the infrastructure layer.
-- 📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/amrit-raj-8a30b8247) or reach out at amritraj4work@gmail.com.
+- Currently architecting real-time streaming platforms and serverless APIs (Cloudflare Workers, Prisma Accelerate, Monorepos).
+- Profiling open-source frameworks to resolve CPU bottlenecks and integrating enterprise-grade authentication (OIDC/JWT) at the infrastructure layer.
+- Connect with me on [LinkedIn](https://www.linkedin.com/in/amrit-raj-8a30b8247) or reach out at amritraj4work@gmail.com.
 
 ---
 
-### 🏆 Featured Engineering Work
+### Projects
 
 **1. [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)**
 A low-latency trading engine handling concurrent orders and live tick data.
@@ -40,7 +40,7 @@ A voice-to-voice AI co-pilot for medical consultations.
 
 ---
 
-### ⚙️ Open Source Impact
+### Open Source Contributions
 
 I actively contribute to distributed orchestration and agentic AI frameworks. I focus on architectural improvements, LLM reliability, and performance bottlenecks.
 * **`aden-hive/hive`:** Engineered an LLM self-correction loop within the orchestrator, automatically feeding validation errors back to the model to improve tool-calling reliability. [View Pull Request](https://github.com/aden-hive/hive/pull/7382)
