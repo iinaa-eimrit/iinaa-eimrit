@@ -1,11 +1,11 @@
 # Hi, I'm Amrit Raj 👋
 
-**Full-Stack TypeScript Engineer | Real-Time Systems & Agentic Workflows**
+**Backend-Heavy Full-Stack Engineer | Real-Time Systems & Distributed Data**
 
-I build high-performance web applications and contribute to the infrastructure that powers them. I specialize in TypeScript, WebSockets for low-latency streaming, and orchestrating LLM tool-calling pipelines.
+I engineer scalable backend systems and data-intensive full-stack platforms. I specialize in TypeScript, low-latency data streaming (WebSockets), database optimization (PostgreSQL/pgvector), and deploying serverless architectures to the edge.
 
-- 🔭 Currently building complex AI agent architectures and real-time backend systems.
-- 🌱 Deep-diving into Rust-based actor models and optimizing open-source LLM orchestration frameworks.
+- 🔭 Currently architecting real-time streaming platforms and serverless APIs (Cloudflare Workers, Prisma Accelerate, Monorepos).
+- 🌱 Profiling open-source frameworks to resolve CPU bottlenecks and integrating enterprise-grade authentication (OIDC/JWT) at the infrastructure layer.
 - 📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/amrit-raj-8a30b8247) or reach out at amritraj4work@gmail.com.
 
 ---
