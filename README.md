@@ -12,31 +12,35 @@ I engineer scalable backend systems and data-intensive full-stack platforms. I s
 
 ### Projects
 
-**1. [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)**
-A low-latency trading engine handling concurrent orders and live tick data.
-* **Architecture:** Built with TypeScript and Node.js. Designed a multiplexed WebSocket streaming architecture to push real-time market data to the React client without overwhelming the main thread.
-* **Why it matters:** Demonstrates strict concurrency management, preventing race conditions in financial state management.
+**1. [Stock Trading Platform](https://github.com/iinaa-eimrit/Stock-Trading-Platform)** | **[Live Demo](https://stock-trading-platform-one.vercel.app)**
+A low-latency trading engine built for concurrent order execution and live portfolio management.
+**Tech Stack:** TypeScript, Node.js, React, WebSockets, PostgreSQL.
+**Engineering Feat:** Designed a multiplexed WebSocket streaming architecture that pushes real-time market tick data to the client without blocking the main UI thread. Implemented strict concurrency controls to eliminate race conditions in financial state management.
 
-**2. [Multi-Workspace Document Assistant (RAG)](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-)**
-An enterprise-grade retrieval-augmented generation (RAG) pipeline with autonomous tool calling.
-* **Architecture:** Implemented complex data chunking, vector similarity search, and a robust prompt-chaining loop to prevent LLM hallucinations.
-* **Why it matters:** Proves ability to move beyond basic API wrappers into robust AI system orchestration.
+**2. [Multi-Workspace Document Assistant](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-)** | **[Live Demo](https://multi-workspace-document-assistant.vercel.app)**
+An enterprise-grade Retrieval-Augmented Generation (RAG) pipeline with autonomous tool calling.
+**Tech Stack:** Node.js, Next.js, pgvector, Gemini 2.5 Flash.
+**Engineering Feat:** Engineered a robust prompt-chaining loop, complex data chunking, and vector similarity search that effectively mitigates LLM hallucinations during multi-workspace queries.
 
-**3. [Pen Pulse](https://github.com/iinaa-eimrit/Pen-Pulse)**
-A highly scalable, serverless blogging API.
-* **Architecture:** Deployed to the edge using Cloudflare Workers with a strict monorepo setup for shared Zod validation schemas. Leveraged Prisma Accelerate for distributed database connection pooling.
+**3. [Pen Pulse API](https://github.com/iinaa-eimrit/Pen-Pulse)** | **[Live Demo](https://pen-pulse-roan.vercel.app/)**
+A highly scalable, serverless backend for a social journalism platform.
+**Tech Stack:** Cloudflare Workers, TypeScript, Prisma Accelerate, Zod.
+**Engineering Feat:** Deployed entirely to the edge with a strict monorepo architecture. Solved edge-to-database connection bottlenecks using Prisma Accelerate and enforced end-to-end type safety with shared Zod validation schemas.
 
 **4. [Space Shooter Game Engine](https://github.com/iinaa-eimrit/Space-Shooter-Game-Engine)**
-A custom high-performance 2D game engine built from scratch.
-* **Architecture:** Designed to demonstrate system-level programming, strict memory management, and rendering loop optimization.
+A custom, high-performance 2D game engine built entirely from scratch.
+**Tech Stack:** C++.
+**Engineering Feat:** Built to demonstrate strict system-level programming. Optimized memory management and rendering loops to maintain a consistent high frame rate under heavy sprite loads.
 
 **5. [Graph Database Cloud Benchmarking](https://github.com/iinaa-eimrit/Graph-Database-Cloud-Benchmarking)**
-A comprehensive data engineering benchmark suite.
-* **Architecture:** Rigorously compares CognoDB against other managed graph database cloud platforms using standardized, heavy-load datasets and complex workloads.
+A comprehensive data engineering benchmark suite comparing cloud graph databases.
+**Tech Stack:** Python, Data Pipelines, Graph Databases.
+**Engineering Feat:** Rigorously compared managed graph database cloud platforms using standardized, heavy-load datasets and complex workloads to analyze performance bottlenecks and optimization thresholds.
 
-**6. [AI Medical Consultation Voice LLM](https://github.com/iinaa-eimrit/AI-Medical-Consultation-Co-pilot-Voice-LLM-)**
+**6. [AI Medical Consultation Voice LLM](https://github.com/iinaa-eimrit/AI-Medical-Consultation-Co-pilot-Voice-LLM-)** | **[Live Demo](https://ai-medical-consultation-co-pilot-vo.vercel.app)**
 A voice-to-voice AI co-pilot for medical consultations.
-* **Architecture:** Engineered a real-time asynchronous pipeline handling audio streaming, live transcription, and text-to-speech with stringent low-latency constraints.
+**Tech Stack:** TypeScript, WebSockets, LLMs, Audio Streaming.
+**Engineering Feat:** Engineered a real-time asynchronous pipeline handling continuous audio streaming, live transcription, and text-to-speech with stringent low-latency constraints.
 
 ---
 
