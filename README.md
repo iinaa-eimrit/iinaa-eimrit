@@ -43,23 +43,11 @@ Client ──► REST / WebSocket ──► Risk Check ──► Matching Engine
 ### 02 — [Multi-Workspace AI Document Assistant](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-) | 🚀 [Live Demo](https://multi-workspace-document-assistant.vercel.app)
 *Next.js 15 · Supabase (PostgreSQL / pgvector) · Gemini 2.5 Flash · SSE Streaming*
 
-A multi-tenant RAG and autonomous tool-calling platform with PostgreSQL-enforced workspace isolation, pgvector retrieval, validated tool execution, and streaming telemetry.
+A multi-tenant RAG and validated tool-calling platform with PostgreSQL-enforced workspace isolation, pgvector retrieval, and streaming telemetry.
 
 - **Database-Enforced Multi-Tenancy**: 0 unauthorized retrievals across 50 adversarial cross-tenant probes. Workspace isolation is enforced at the database layer inside a custom PostgreSQL `match_chunks` RPC (`WHERE dc.workspace_id = target_workspace_id`) across a shared HNSW index.
-- **Grounded Responses & Refusal**: Retrieval thresholds and system-level rules prevent unsupported answers when relevant workspace context is unavailable, coupled with inline source citations.
+- **Grounded Responses & Refusal**: Retrieval thresholds and system-level rules trigger an explicit refusal when relevant workspace context is unavailable, coupled with inline source citations.
 - **Validated Tool Execution & Controls**: Server validates tool arguments against strict schemas before executing side-effects (`save_task`, Discord webhooks); enforced SHA-256 `content_hash` constraints for idempotent document ingestion.
-
-```text
-Document Ingestion ──► Chunking ──► gemini-embedding-2 (768d) ──► pgvector (HNSW)
-                                                                       │
-User Query ──► match_chunks RPC (Database-Level Isolation) ────────────┘
-                     │
-                     ▼
-             Gemini 2.5 Flash ──► Schema-Validated Tool Calling ──► Side Effects (DB / Webhooks)
-                     │
-                     ▼
-             SSE Streaming Output with Grounded Inline Citations
-```
 
 ---
 
@@ -69,14 +57,16 @@ I actively contribute to distributed runtimes and agentic AI frameworks, focusin
 
 #### **[aden-hive/hive](https://github.com/aden-hive/hive)** — *Multi-Agent Harness for Production AI*
 - **✅ Merged Upstream ([#7356](https://github.com/aden-hive/hive/pull/7356))**: Added nearest-tool suggestions for unknown tool calls using Python's `difflib` matching to improve agent execution resilience.
-- **LLM Self-Correction ([#7382](https://github.com/aden-hive/hive/pull/7382) / [#7392](https://github.com/aden-hive/hive/pull/7392))**: Captured structured Pydantic schema validation failures in the orchestrator and fed error reports back into the LLM context for real-time autonomous correction.
-- **Fail-Fast Validation ([#7395](https://github.com/aden-hive/hive/pull/7395))**: Added load-time validation for orchestrator `output_keys` to prevent silent graph execution failures.
-- **Runtime Reliability ([#7381](https://github.com/aden-hive/hive/pull/7381), [#7377](https://github.com/aden-hive/hive/pull/7377))**: Resolved Windows absolute path resolution bugs for MCP servers and added retry logic for atomic file operations.
+- **In Review / Submitted**:
+  - **LLM Self-Correction ([#7382](https://github.com/aden-hive/hive/pull/7382) / [#7392](https://github.com/aden-hive/hive/pull/7392))**: Captured structured Pydantic schema validation failures in the orchestrator and fed error reports back into the LLM context for real-time autonomous correction.
+  - **Fail-Fast Validation ([#7395](https://github.com/aden-hive/hive/pull/7395))**: Added load-time validation for orchestrator `output_keys` to prevent silent graph execution failures.
+  - **Runtime Reliability ([#7381](https://github.com/aden-hive/hive/pull/7381), [#7377](https://github.com/aden-hive/hive/pull/7377))**: Resolved Windows absolute path resolution bugs for MCP servers and added retry logic for atomic file operations.
 
 #### **[rivet-dev/actors](https://github.com/rivet-dev/actors)** — *Stateful Distributed Primitive for AI Agents & Workloads*
-- **$O(N) \to O(1)$ Request Lookup ([#5635](https://github.com/rivet-dev/actors/pull/5635), [Issue #5581](https://github.com/rivet-dev/actors/issues/5581))**: Profiled runner tunnel under high concurrency, isolated severe CPU bottleneck caused by linear array scanning in `requestToActor`, and refactored to $O(1)$ Map lookup.
-- **Enterprise OIDC/JWT Infrastructure ([#5572](https://github.com/rivet-dev/actors/pull/5572))**: Added external OIDC and JWT token verification inside `onAuth` lifecycle hooks with in-memory JWKS public-key caching.
-- **Inspector Protocol Fix ([#5596](https://github.com/rivet-dev/actors/pull/5596))**: Fixed missing WebSocket protocol headers required by actor inspector client connections.
+- **In Review / Submitted**:
+  - **$O(N) \to O(1)$ Request Lookup ([#5635](https://github.com/rivet-dev/actors/pull/5635), [Issue #5581](https://github.com/rivet-dev/actors/issues/5581))**: Profiled runner tunnel under high concurrency, isolated severe CPU bottleneck caused by linear array scanning in `requestToActor`, and refactored to $O(1)$ Map lookup.
+  - **Enterprise OIDC/JWT Infrastructure ([#5572](https://github.com/rivet-dev/actors/pull/5572))**: Added external OIDC and JWT token verification inside `onAuth` lifecycle hooks with in-memory JWKS public-key caching.
+  - **Inspector Protocol Fix ([#5596](https://github.com/rivet-dev/actors/pull/5596))**: Fixed missing WebSocket protocol headers required by actor inspector client connections.
 
 ---
 
