@@ -26,7 +26,7 @@ A deterministic real-time matching engine and financial exchange simulator built
 
 - **50K-Order Cancellation Benchmark: 37.5s → 29.8ms (1,250× faster)**: Replaced naive linear array lookups with an in-memory SkipList price index and $O(1)$ order-ID map indexing.
 - **Financial Invariant Correctness**: Replaced IEEE-754 floating-point numbers with custom fixed-point integer arithmetic (`PriceTicks` & `QuantityLots`), eliminating rounding drift across high-frequency fills.
-- **Crash Recovery & Settlement**: Implemented deterministic event journaling with periodic snapshot/replay recovery that withstands abrupt `SIGKILL` termination, paired with an ACID double-entry settlement engine in PostgreSQL.
+- **Crash Recovery & Settlement**: Implemented deterministic event journaling with periodic snapshot/replay recovery that withstands abrupt `SIGKILL` termination. Recovery may replay events, but financial state remains strictly idempotent and reconciles with double-entry ledger state in PostgreSQL.
 - **Multiplexed Streaming**: WebSocket architecture streaming live orderbook depth, trade feeds, and candlestick intervals without blocking the main event loop.
 
 ```text
@@ -44,12 +44,12 @@ Client ──► REST / WebSocket ──► Risk Check ──► Matching Engine
 ### 02 — [Multi-Workspace AI Document Assistant](https://github.com/iinaa-eimrit/Multi-Workspace-Document-Assistant-RAG-Tool-Calling-) | 🚀 [Live Demo](https://multi-workspace-document-assistant.vercel.app)
 *Next.js 15 · Supabase (PostgreSQL / pgvector) · Gemini 2.5 Flash · SSE Streaming*
 
-An enterprise-grade retrieval-augmented generation (RAG) and autonomous tool-calling platform designed for strict data isolation and reliability.
+A multi-tenant RAG and autonomous tool-calling platform with PostgreSQL-enforced workspace isolation, pgvector retrieval, validated tool execution, and streaming telemetry.
 
-- **Database-Enforced Multi-Tenancy**: Workspace isolation is enforced at the database layer inside a custom PostgreSQL `match_chunks` RPC function (`WHERE dc.workspace_id = target_workspace_id`) across a shared HNSW index—guaranteeing zero cross-workspace data leakage.
-- **Grounded Verification & Honest Refusal**: System prompts and similarity score cutoffs enforce honest "I don't know" refusal when context lacks evidence, coupled with inline source citations.
+- **Database-Enforced Multi-Tenancy**: 0 unauthorized retrievals across 50 adversarial cross-tenant probes. Workspace isolation is enforced at the database layer inside a custom PostgreSQL `match_chunks` RPC function (`WHERE dc.workspace_id = target_workspace_id`) across a shared HNSW index.
+- **Grounded Verification & Honest Refusal**: System prompts and similarity score cutoffs enforce deterministic honest refusal when context lacks evidence, coupled with inline source citations.
 - **Autonomous Tool Execution**: Server validates LLM-proposed tool calls against strict schemas before executing side-effects (`save_task`, Discord webhook notifications), logging all inputs/outputs to a durable audit trail.
-- **Production Controls**: SHA-256 `content_hash` unique constraints for idempotent document chunk ingestion, real-time SSE token streaming, and an interactive RAG debugger showing similarity scores.
+- **Adversarial Hardening & Controls**: Document content is treated strictly as untrusted data separated from system directives (tested against instruction hijacking and unauthorized tool invocations). Enforces SHA-256 `content_hash` unique constraints for idempotent document chunk ingestion.
 
 ```text
 Document Ingestion ──► Chunking ──► gemini-embedding-2 (768d) ──► pgvector (HNSW)
