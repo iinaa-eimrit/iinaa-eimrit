@@ -1,6 +1,6 @@
 # Hi, I'm Amrit Raj 👋
 
-**Backend / Platform Engineer | AI Infrastructure | Distributed & Real-Time Systems**
+**Software Engineer(Backend & AI Systems)**
 
 I build backend and AI systems where performance, correctness, reliability, and data isolation matter.  
 I work primarily with TypeScript, Python, PostgreSQL, WebSockets, RAG, and distributed runtimes, and I contribute to open-source agent and actor infrastructure.
